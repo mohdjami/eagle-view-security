@@ -79,13 +79,17 @@ const Navbar = () => {
                   alt=""
                   className="block lg:hidden"
                 />
-                <Link className="hover:underline" href="#">
+                <Link className="hover:underline" href="/">
                   Home
                 </Link>
-                <Link className="hover:underline" href="#">
+                <Link className="hover:underline" href="/services">
                   Services
+                </Link> <Link className="hover:underline" href="/benefits">
+                  Benefits
+                </Link> <Link className="hover:underline" href="/careers">
+                  Careers
                 </Link>
-                <Link className="hover:underline" href="#">
+                <Link className="hover:underline" href="/about">
                   About
                 </Link>
                 <Link className="hover:underline" href="#">

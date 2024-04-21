@@ -53,7 +53,7 @@ const About = () => {
                   Careers
                 </Link>{" "}
                 <Link
-                  href="tel:+1 (514) 560‑5863"
+                  href="/contact"
                   className="flex text-l mx-4 md:text-lg text-white font-normal hover:text-gray-900 hover:bg-white p-1/2 px-1 rounded-lg"
                 >
                   Contact
@@ -78,7 +78,7 @@ const About = () => {
                   Loss Prevention
                 </Link>{" "}
                 <Link
-                  href="/services/"
+                  href="/services/concierge-security-services"
                   className="flex text-l mx-4 md:text-lg text-white font-normal hover:text-gray-900 hover:bg-white p-1/2 px-1 rounded-lg"
                 >
                   Concierge Security Services
@@ -90,7 +90,7 @@ const About = () => {
                   Commercial High-Rise Security
                 </Link>{" "}
                 <Link
-                  href="/services/construction-sitesecurity"
+                  href="/services/construction-site-security"
                   className="flex text-l mx-4 md:text-lg text-white font-normal hover:text-gray-900 hover:bg-white p-1/2 px-1 rounded-lg"
                 >
                   Construction Site Security
@@ -102,7 +102,7 @@ const About = () => {
                   Fire Watch Security
                 </Link>{" "}
                 <Link
-                  href="/services/mobile-control"
+                  href="/services/mobile-patrol"
                   className="flex text-l mx-4 md:text-lg text-white font-normal hover:text-gray-900 hover:bg-white p-1/2 px-1 rounded-lg"
                 >
                   Mobile Patrol
@@ -126,7 +126,7 @@ const About = () => {
                   IT Security
                 </Link>{" "}
                 <Link
-                  href="/services"
+                  href="/services/private-investigation-and-serveillance-servies"
                   className="flex  text-le text-l mx-4 md:text-lg text-white font-normal hover:text-gray-900 hover:bg-white p-1/2 px-1 rounded-lg"
                 >
                   Private Investigation & Surveillance Services
@@ -134,7 +134,7 @@ const About = () => {
               </CardDescription>
             </Card>
 
-            <Card className="grid gap-4 mt-10 mx-4 md:m-4 w-[100px] mx-4 md:w-[200px] pt-5 h-[250px]  bg-transparent border-0">
+            <Card className="grid gap-4 mt-10 mx-4 md:m-4 w-[100px]  md:w-[200px] pt-5 h-[250px]  bg-transparent border-0">
               <CardTitle className="mx-4 md:text-xl text-slate-200 text-left">
                 Contact Information
               </CardTitle>
