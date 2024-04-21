@@ -5,6 +5,7 @@ import { Inter as FontSans } from "next/font/google";
 import { cn } from "@/lib/utils";
 import Navbar from "@/components/Navbar";
 import About from "@/components/About";
+import { BsArrow90DegDown } from "react-icons/bs";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -33,6 +34,7 @@ export default function RootLayout({
         {children}
         <About />
       </body>
+      <BsArrow90DegDown />
     </html>
   );
 }

@@ -23,7 +23,7 @@ const About = () => {
           </div> */}
 
           <div className="grid gap-6 mx-4 md:grid-cols-3">
-            <Card className="grid gap-6 md:m-4 mx-4 md:w-[200px] pt-5 h-[250px]  bg-transparent border-0">
+            <Card className="grid gap-6 md:m-4 mx-4 md:w-[200px] pt-5 h-auto md:h-[250px]  bg-transparent border-0">
               <CardTitle className="mx-4 md:text-xl text-slate-200 text-left">
                 Quick Links
               </CardTitle>
@@ -66,7 +66,7 @@ const About = () => {
                 </Link>{" "}
               </CardDescription>
             </Card>
-            <Card className="grid gap-6 md:m-4 mx-4 md:w-[300px] pt-5 h-[250px]  bg-transparent border-0">
+            <Card className="grid gap-6 md:m-4 mx-4 md:w-[300px] pt-5 h-auto md:h-[250px]  bg-transparent border-0">
               <CardTitle className="mx-4 md:text-xl text-slate-200 text-left">
                 Security Guard Services
               </CardTitle>
@@ -134,7 +134,7 @@ const About = () => {
               </CardDescription>
             </Card>
 
-            <Card className="grid gap-4 mt-10 mx-4 md:m-4 w-[100px]  md:w-[200px] pt-5 h-[250px]  bg-transparent border-0">
+            <Card className="grid gap-4 mt-10 mx-4 md:m-4 w-[100px]  md:w-[200px] pt-5 h-auto md:h-[250px]  bg-transparent border-0">
               <CardTitle className="mx-4 md:text-xl text-slate-200 text-left">
                 Contact Information
               </CardTitle>
