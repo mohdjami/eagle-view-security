@@ -75,9 +75,12 @@ const page = () => {
           <div className="container grid grid-cols-1 text-xl text-white font-light font-sans gap-4 md:grid-cols-1">
             Ontario&apos;s Trusted Security Guard Company
           </div>
-          <div className="justify-center lg:ml-[130px]">
+          <div className="flex items-center justify-center ">
             {" "}
-            <Carousel2 />
+            <Carousel2
+              className="md:basis-1/3"
+              classNameCarousel="md:w-[1000px]"
+            />
           </div>
         </div>{" "}
       </section>

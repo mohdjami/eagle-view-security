@@ -14,16 +14,24 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 
-export function Carousel2() {
+interface CarouselProps {
+  className: string;
+  classNameCarousel: string;
+}
+
+export const Carousel2: React.FC<CarouselProps> = ({
+  className,
+  classNameCarousel,
+}) => {
   return (
     <Carousel
       opts={{
         align: "start",
       }}
-      className="items-center lg:w-[1000px] "
+      className={`items-center  ${classNameCarousel}`}
     >
       <CarouselContent>
-        <CarouselItem className=" md:basis-1/2 lg:basis-1/3">
+        <CarouselItem className={`${className} `}>
           <div className="p-1">
             <Card className="h-[350px]">
               <CardDescription className="grid aspect-square items-center justify-center p-6">
@@ -36,7 +44,7 @@ export function Carousel2() {
             </Card>
           </div>
         </CarouselItem>
-        <CarouselItem className=" md:basis-1/2 lg:basis-1/3">
+        <CarouselItem className={`md:basis-1 lg:basis-1/2, ${className} `}>
           <div className="p-1">
             <Card className="h-[350px]">
               <CardDescription className="grid aspect-square items-center justify-center p-6">
@@ -51,7 +59,7 @@ export function Carousel2() {
             </Card>
           </div>
         </CarouselItem>
-        <CarouselItem className=" md:basis-1/2 lg:basis-1/3">
+        <CarouselItem className={`md:basis-1 lg:basis-1/2, ${className} `}>
           <div className="p-1">
             <Card className="h-[350px]">
               <CardDescription className="grid aspect-square items-center justify-center p-6">
@@ -63,7 +71,7 @@ export function Carousel2() {
             </Card>
           </div>
         </CarouselItem>
-        <CarouselItem className=" md:basis-1/2 lg:basis-1/3">
+        <CarouselItem className={`md:basis-1 lg:basis-1/2, ${className} `}>
           <div className="p-1">
             <Card className="h-[350px]">
               <CardDescription className="grid  aspect-square items-center justify-center p-6 text-sm text-gray-600">
@@ -76,7 +84,7 @@ export function Carousel2() {
             </Card>
           </div>
         </CarouselItem>
-        <CarouselItem className=" md:basis-1/2 lg:basis-1/3">
+        <CarouselItem className={`md:basis-1 lg:basis-1/2, ${className} `}>
           <div className="p-1">
             <Card className="h-[350px]">
               <CardDescription className="grid aspect-square items-center justify-center p-6">
@@ -94,4 +102,4 @@ export function Carousel2() {
       <CarouselNext className="text-white bg-gray-800" />
     </Carousel>
   );
-}
+};

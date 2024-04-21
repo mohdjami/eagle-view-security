@@ -22,6 +22,7 @@ import {
   TwitterLogoIcon,
 } from "@radix-ui/react-icons";
 import FeatureCards from "./Features";
+import { Carousel2 } from "./Carousel";
 export default function Hero() {
   return (
     <div className="flex flex-col min-h-[100dvh]">
@@ -107,42 +108,10 @@ export default function Hero() {
                 small shops to large corporations. See what our clients have to
                 say.
               </p>
-              <div className="grid grid-cols-2 gap-4">
-                <div className="bg-gray-800 rounded-lg p-6 space-y-4">
-                  <div className="flex items-center gap-2">
-                    <Avatar>
-                      <AvatarImage alt="Client 1" src="/avatar-1.jpg" />
-                      <AvatarFallback>C1</AvatarFallback>
-                    </Avatar>
-                    <div>
-                      <h3 className="font-semibold">John Doe</h3>
-                      <p className="text-sm text-gray-400">CEO, Acme Inc.</p>
-                    </div>
-                  </div>
-                  <p className="text-lg">
-                    &quot;Secure Guard has been a game-changer for our
-                    business.&quot;
-                  </p>
-                </div>
-                <div className="bg-gray-800 rounded-lg p-6 space-y-4">
-                  <div className="flex items-center gap-2">
-                    <Avatar>
-                      <AvatarImage alt="Client 2" src="/avatar-2.jpg" />
-                      <AvatarFallback>C2</AvatarFallback>
-                    </Avatar>
-                    <div>
-                      <h3 className="font-semibold">Jane Smith</h3>
-                      <p className="text-sm text-gray-400">
-                        Owner, Widgets Co.
-                      </p>
-                    </div>
-                  </div>
-                  <p className="text-lg">
-                    &quot;I highly recommend Secure Guard to any business
-                    owner.&quot;
-                  </p>
-                </div>
-              </div>
+              <Carousel2
+                className="md:basis-1/2"
+                classNameCarousel="md:w-[600px]"
+              />
             </div>
             <div className="flex justify-center">
               <img
