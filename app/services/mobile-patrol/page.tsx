@@ -18,7 +18,7 @@ const page = () => {
             {" "}
             <div className="hidden md:flex items-center justify-center">
               <Image
-                src="/mobile.jpg"
+                src="/mobile-patrol.jpg"
                 alt=""
                 width={1000}
                 height={1000}
@@ -27,7 +27,7 @@ const page = () => {
             </div>{" "}
             <div className="flex mx-10 md:hidden items-center justify-center">
               <Image
-                src="/mobile.jpg"
+                src="/mobile-patrol.jpg"
                 alt=""
                 width={500}
                 height={500}
