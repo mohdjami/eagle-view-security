@@ -21,7 +21,7 @@ const page = () => {
             {" "}
             <div className="hidden md:flex items-center justify-center">
               <Image
-                src="/commercial.JPG"
+                src="/commercial.jpg"
                 alt=""
                 width={400}
                 height={400}
@@ -30,7 +30,7 @@ const page = () => {
             </div>{" "}
             <div className="flex mx-10 md:hidden items-center justify-center">
               <Image
-                src="/commercial.JPG"
+                src="/commercial.jpg"
                 alt=""
                 width={500}
                 height={500}

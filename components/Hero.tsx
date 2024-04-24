@@ -23,6 +23,7 @@ import {
 } from "@radix-ui/react-icons";
 import FeatureCards from "./Features";
 import { Carousel2 } from "./Carousel";
+import ContactForm from "./contact-me-form";
 export default function Hero() {
   return (
     <div className="flex flex-col min-h-[100dvh]">
@@ -132,38 +133,7 @@ export default function Hero() {
           <FeatureCards />
         </section>
         <section className="w-full py-12 md:py-24 lg:py-20 bg-gray-100 dark:bg-gray-800">
-          <div className="container px-4 md:px-6">
-            <div className="mx-auto max-w-md space-y-6">
-              <div className="space-y-2 text-center">
-                <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight">
-                  Get in Touch
-                </h2>
-                <p className="text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                  Have a question or need a quote? Fill out the form below and
-                  we&apos;ll get back to you as soon as possible.
-                </p>
-              </div>
-              <form className="space-y-4">
-                <div className="grid gap-4 sm:grid-cols-2">
-                  <div className="space-y-2">
-                    <Label htmlFor="name">Name</Label>
-                    <Input id="name" required type="text" />
-                  </div>
-                  <div className="space-y-2">
-                    <Label htmlFor="email">Email</Label>
-                    <Input id="email" required type="email" />
-                  </div>
-                </div>
-                <div className="space-y-2">
-                  <Label htmlFor="message">Message</Label>
-                  <Textarea id="message" required rows={4} />
-                </div>
-                <Button className="w-full" type="submit">
-                  Submit
-                </Button>
-              </form>
-            </div>
-          </div>
+          <ContactForm />
         </section>
       </main>
       <footer className="bg-gray-900 text-white px-6 py-8">
