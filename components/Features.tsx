@@ -77,7 +77,7 @@ function Cards() {
       <Card className="flex flex-grow flex-col justify-between gap-4 p-8 text-left bg-gray-900 dark:bg-secondary">
         <CardTitle className="grid text-white font-bold hover:text-red-600">
           <Link
-            href="/services/construction-sitesecurity"
+            href="/services/construction-site-security"
             className="grid gap-4 text-left  text-l lg:text-lg "
           >
             {" "}
@@ -125,7 +125,7 @@ function Cards() {
       <Card className="flex flex-grow flex-col justify-between gap-4 p-8 text-left bg-gray-900 dark:bg-secondary">
         <CardTitle className="grid text-white font-bold hover:text-red-600">
           <Link
-            href="tel:+1 (514) 560‑5863"
+            href="/private-investigation-and-serveillance-servies"
             className="grid gap-4 text-left  text-l lg:text-lg "
           >
             {" "}
