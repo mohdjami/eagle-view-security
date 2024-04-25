@@ -12,12 +12,11 @@ const ContactForm = () => {
 
   const handleFormSubmit = async (event: { preventDefault: () => void }) => {
     event.preventDefault();
-
     console.log(email, name, text);
     const res = await fetch("/emails", {
       headers: { "Content-Type": "application/json" },
       method: "POST",
-      body: JSON.stringify({ email, name, message: text }),
+      body: JSON.stringify({ name, email, text }),
     });
     console.log(res);
   };
