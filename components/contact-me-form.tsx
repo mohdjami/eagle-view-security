@@ -4,13 +4,15 @@ import { Label } from "./ui/label";
 import { Textarea } from "./ui/textarea";
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
+import { Icons } from "./icons";
 
 const ContactForm = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [text, setText] = useState("");
-
+  const [loading, isLoading] = useState(false);
   const handleFormSubmit = async (event: { preventDefault: () => void }) => {
+    isLoading(true);
     event.preventDefault();
     console.log(email, name, text);
     const res = await fetch("/emails", {
@@ -18,7 +20,7 @@ const ContactForm = () => {
       method: "POST",
       body: JSON.stringify({ name, email, text }),
     });
-    console.log(res);
+    isLoading(false);
   };
 
   return (
@@ -65,9 +67,15 @@ const ContactForm = () => {
                 onChange={(e) => setText(e.target.value)}
               />
             </div>
-            <Button className="w-full" type="submit">
-              Submit
-            </Button>
+            {loading ? (
+              <Button className="flex w-full" type="submit">
+                Submit <Icons.spinner className="mr-2 h-4 w-4 animate-spin" />
+              </Button>
+            ) : (
+              <Button className="w-full" type="submit">
+                Submit
+              </Button>
+            )}
           </form>
         </div>
       </div>
